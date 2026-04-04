@@ -1,5 +1,15 @@
 # Claude Code in Neovim
 
+## 0. Install Claude Code Neovim Plugin
+
+In your terminal, run:
+
+```bash
+claude install-vim-extension
+```
+
+This will automatically configure the plugin for Neovim.
+
 ## 1. Launch Neovim
 
 Open a terminal and run:
