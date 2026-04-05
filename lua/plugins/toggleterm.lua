@@ -19,8 +19,8 @@ return {
       end,
     })
 
-    -- Always enter insert mode when entering terminal window
-    vim.api.nvim_create_autocmd("BufEnter", {
+    -- Always enter insert mode when entering terminal window (mouse click or keymap)
+    vim.api.nvim_create_autocmd({ "BufEnter", "WinEnter" }, {
       pattern = "term://*",
       command = "startinsert",
     })
